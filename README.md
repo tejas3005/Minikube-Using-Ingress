@@ -43,7 +43,7 @@ step 9:
 
 
 step 10:
-  curl http://<minikubeip>:portnumber
+  curl http://minikubeip:portnumber
 
   THE OUTPUT SHOULD BE:
 
