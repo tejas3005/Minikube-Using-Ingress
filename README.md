@@ -20,21 +20,21 @@ Step 4: search for ansible and select the ansible config file and click on ok
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/868b4d65-ac54-4245-b223-a45ef35204f1)
 
-Step 5: 
+Step 5: Search for "> rebuild" and click on rebuild container.
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/47b2541a-b9b9-4da9-8367-8eb2c13b4a6f)
 
-
+step 6: container rebuild will take place.
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/480d076a-3ea0-4bec-9ee3-3b3a330ba9c1)
 
-Step 2:
+Step 7:
   git clone https://github.com/tejas3005/Minikube-Using-Ingress.git
 
-Step 3:
+Step 8:
   ansible-playbook deploy-minikube.yaml
 
-step 4: 
+step 9: 
   minikube service hello-kubernetes-first --url
 
   THE OUTOUT SHOULD BE:
@@ -42,7 +42,7 @@ step 4:
 <img width="626" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/b84bbc69-b7bc-473c-966a-c2565b1441c0">
 
 
-step 5:
+step 10:
   curl http://<minikubeip>:portnumber
 
   THE OUTPUT SHOULD BE:
