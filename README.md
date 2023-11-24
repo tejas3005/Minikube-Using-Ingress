@@ -12,11 +12,15 @@ Step 2: click on search & type "> dev" and select "add dev container config file
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/e7055354-ce2a-4f8f-ba04-44e90cdfb8f9)
 
-Step 3: search for anisble 
+Step 3: click on modify active config
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/e455cf85-5e3a-423e-b280-d66425f1d0ce)
 
+Step 4: search for ansible and select the ansible config file and click on ok
+
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/868b4d65-ac54-4245-b223-a45ef35204f1)
+
+Step 5: 
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/47b2541a-b9b9-4da9-8367-8eb2c13b4a6f)
 
