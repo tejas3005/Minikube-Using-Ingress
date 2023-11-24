@@ -28,6 +28,7 @@ step 4:
   minikube service hello-kubernetes-first --url
 
   THE OUTOUT SHOULD BE:
+
 <img width="626" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/b84bbc69-b7bc-473c-966a-c2565b1441c0">
 
 
@@ -35,6 +36,7 @@ step 5:
   curl http://<minikubeip>:portnumber
 
   THE OUTPUT SHOULD BE:
+
  <img width="574" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/0c61b9a0-36f3-4aae-82d5-6b32f47f47e2">
 
  NOTE :
