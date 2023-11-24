@@ -1,0 +1,47 @@
+---
+- name: Setup Minikube and deploy Kubernetes resources
+  hosts: localhost
+  gather_facts: false
+  tasks:
+
+    - name: Starting Minikube cluster
+      command: "minikube start"
+
+    - name: Enable Minikube Ingress addon
+      command: "minikube addons enable ingress"
+    
+    - name: Wait for Ingress controller to be ready
+      command: "kubectl wait --namespace=ingress-nginx --for=condition=ready pod --selector=app.kubernetes.io/component=controller --timeout=300s"
+
+    - name: Check if deployment hello-kubernetes-first exists
+      command: "kubectl get deployment hello-kubernetes-first"
+      ignore_errors: true
+      register: deployment_check
+    
+    - name: Create deployment from hello-kubernetes-first.yaml if it does not exist
+      command: "kubectl create -f hello-kubernetes-first.yaml"
+      when: deployment_check.rc != 0
+
+    - name: Get service information for hello-kubernetes-first
+      command: "kubectl get service hello-kubernetes-first"
+
+    - name: Get service information for hello-kubernetes-first
+      command: "kubectl get service hello-kubernetes-first"
+
+    - name: Pause for 30 seconds before retrieving Minikube service URL
+      pause:
+        seconds: 30
+
+    - name: Get Minikube service URL for hello-kubernetes-first
+      command: "minikube service hello-kubernetes-first --url"
+
+    - name: Apply example-ingress.yaml
+      command: "kubectl apply -f example-ingress.yaml"
+
+    - name: Get Ingress information
+      command: "kubectl get ingress"
+
+    - name: Use curl to access the service
+      command: "curl --resolve 'hello-world.info:80:$( minikube ip )' -i http://hello-world.info"
+
+
