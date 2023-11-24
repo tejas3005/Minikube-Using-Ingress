@@ -8,9 +8,11 @@ Step 1: Click on codespace and create a new codespace
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/baa96a66-071b-4b77-9cae-992404c3b43b)
 
-Step 2: click on search & type > dev and select
+Step 2: click on search & type "> dev" and select "add dev container config file"
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/e7055354-ce2a-4f8f-ba04-44e90cdfb8f9)
+
+Step 3: search for anisble 
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/e455cf85-5e3a-423e-b280-d66425f1d0ce)
 
