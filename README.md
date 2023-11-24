@@ -2,9 +2,13 @@
 
 Welcome to the Minikube Ingress Demonstration repository! This project provides a simple and hands-on demonstration of setting up and using Ingress with Minikube, allowing you to easily expose and access your Kubernetes services.
 
-Step 1:  Setting up Environment on github codespace
+Setting up Environment on github codespace
+
+Step 1: Click on codespace and create a new codespace
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/baa96a66-071b-4b77-9cae-992404c3b43b)
+
+Step 2: click on search & type > dev and select
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/e7055354-ce2a-4f8f-ba04-44e90cdfb8f9)
 
