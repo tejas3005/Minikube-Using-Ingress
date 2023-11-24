@@ -43,8 +43,16 @@ step 5:
 
 1. to check Minikube status use:
   minikube status
+
+THE OUTPUT SHOULD BE:
+<img width="551" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/4f44d25d-ea5d-4adb-a3e1-ce93f86fe1e8">
+
 2. t0 check status of all running pods, deployments and services use:
   kubectl get pods,services --all-namespaces
+
+THE OUTPUT SHOULD BE:
+
+<img width="829" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/3f8e4833-f09e-417e-b7aa-86737ed78aee">
 
 
    
