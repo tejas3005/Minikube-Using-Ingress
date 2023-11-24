@@ -45,6 +45,7 @@ step 5:
   minikube status
 
 THE OUTPUT SHOULD BE:
+
 <img width="551" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/4f44d25d-ea5d-4adb-a3e1-ce93f86fe1e8">
 
 2. t0 check status of all running pods, deployments and services use:
