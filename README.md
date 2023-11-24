@@ -2,7 +2,7 @@
 
 Welcome to the Minikube Ingress Demonstration repository! This project provides a simple and hands-on demonstration of setting up and using Ingress with Minikube, allowing you to easily expose and access your Kubernetes services.
 
-Setting up Environment on github codespace
+Step 1:  Setting up Environment on github codespace
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/baa96a66-071b-4b77-9cae-992404c3b43b)
 
@@ -17,5 +17,36 @@ Setting up Environment on github codespace
 
 
 ![image](https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/480d076a-3ea0-4bec-9ee3-3b3a330ba9c1)
+
+Step 2:
+  git clone https://github.com/tejas3005/Minikube-Using-Ingress.git
+
+Step 3:
+  ansible-playbook deploy-minikube.yaml
+
+step 4: 
+  minikube service hello-kubernetes-first --url
+
+  THE OUTOUT SHOULD BE:
+<img width="626" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/b84bbc69-b7bc-473c-966a-c2565b1441c0">
+
+
+step 5:
+  curl http://<minikubeip>:portnumber
+
+  THE OUTPUT SHOULD BE:
+ <img width="574" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/0c61b9a0-36f3-4aae-82d5-6b32f47f47e2">
+
+ NOTE :
+
+1. to check Minikube status use:
+  minikube status
+2. t0 check status of all running pods, deployments and services use:
+  kubectl get pods,services --all-namespaces
+
+
+   
+
+ 
 
 
