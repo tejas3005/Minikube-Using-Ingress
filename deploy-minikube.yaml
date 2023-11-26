@@ -46,6 +46,28 @@
     - name: Create example-ingress.yaml
       copy:
         content: |
+            apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec: 
+  tls:
+    - secretName: hello-world-info-tls
+      hosts:
+        - 'hello-world.info'
+  rules:      
+    - host: hello-world.info
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-kubernetes-first
+                port:
+                  number: 8080
           
         dest: ./example-ingress.yaml
 
