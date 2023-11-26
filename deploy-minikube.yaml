@@ -35,6 +35,20 @@
     - name: Get Minikube service URL for hello-kubernetes-first
       command: "minikube service hello-kubernetes-first --url"
 
+    - name: Create example-ingress.yaml
+  hosts: localhost
+  tasks:
+    - name: Ensure the current directory exists
+      file:
+        path: .
+        state: directory
+
+    - name: Create example-ingress.yaml
+      copy:
+        content: |
+          
+        dest: ./example-ingress.yaml
+
     - name: Apply example-ingress.yaml
       command: "kubectl apply -f example-ingress.yaml"
 
