@@ -49,6 +49,9 @@ step 10:
 
  <img width="574" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/0c61b9a0-36f3-4aae-82d5-6b32f47f47e2">
 
+<img width="695" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/f451a946-8c40-4c70-8e5d-33cc6d011477">
+
+
  NOTE :
 
 1. to check Minikube status use:
