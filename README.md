@@ -68,6 +68,9 @@ THE OUTPUT SHOULD BE:
 
 <img width="829" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/3f8e4833-f09e-417e-b7aa-86737ed78aee">
 
+<img width="587" alt="image" src="https://github.com/tejas3005/Minikube-Using-Ingress/assets/48887643/9324cacd-4949-4046-b78a-e6a105c99836">
+
+
 
    
 
